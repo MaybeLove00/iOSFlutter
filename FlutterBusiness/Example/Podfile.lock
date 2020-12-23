@@ -1,0 +1,16 @@
+PODS:
+  - FlutterBusiness (0.1.0)
+
+DEPENDENCIES:
+  - FlutterBusiness (from `../`)
+
+EXTERNAL SOURCES:
+  FlutterBusiness:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  FlutterBusiness: f965d7bd7d1cbe040c650a6b107436f094e58630
+
+PODFILE CHECKSUM: e73b5444db68350525d8a08a168d9df65c2fa042
+
+COCOAPODS: 1.10.0
