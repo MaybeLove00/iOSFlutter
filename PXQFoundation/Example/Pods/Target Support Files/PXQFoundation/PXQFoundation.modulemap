@@ -1,0 +1,6 @@
+framework module PXQFoundation {
+  umbrella header "PXQFoundation-umbrella.h"
+
+  export *
+  module * { export * }
+}

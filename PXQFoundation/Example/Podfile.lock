@@ -1,0 +1,16 @@
+PODS:
+  - PXQFoundation (0.1.0)
+
+DEPENDENCIES:
+  - PXQFoundation (from `../`)
+
+EXTERNAL SOURCES:
+  PXQFoundation:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  PXQFoundation: 4e073acb60961ca6c1ca0b74aba7d72ebb2d3809
+
+PODFILE CHECKSUM: 16327c71d1852bc73b540f3ff267c0863bcbddc8
+
+COCOAPODS: 1.10.0
