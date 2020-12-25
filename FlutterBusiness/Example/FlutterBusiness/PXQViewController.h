@@ -8,6 +8,8 @@
 
 @import UIKit;
 #import "PXQRootObject.h"
+#import "WXApi.h"
+
 @interface PXQViewController : UIViewController
 
 @end

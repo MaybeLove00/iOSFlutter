@@ -21,7 +21,7 @@ Pod::Spec.new do |s|
 TODO: Add long description of the pod here.
                        DESC
 
-  s.homepage         = 'https://github.com/MaybeLove00/iOSFlutter/FlutterBusiness'
+  s.homepage         = 'https://github.com/MaybeLove00/iOSFlutter'
   # s.screenshots     = 'www.example.com/screenshots_1', 'www.example.com/screenshots_2'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
   s.author           = { 'xq.pan' => 'xq.pan@ctrip.com' }
@@ -30,8 +30,12 @@ TODO: Add long description of the pod here.
 
   s.ios.deployment_target = '9.0'
 
-  s.source_files = 'FlutterBusiness/FlutterBusiness/Classes/**/*'
-  
+  s.source_files = 'FlutterBusiness/Classes/**/*.{h,m}', 'FlutterBusiness/Classes/ThirdParty/*.{h}'
+
+  s.vendored_libraries  = 'NCKFoundation/Classes/ThirdParty/*.{a}'
+  s.frameworks = 'SystemConfiguration','CoreGraphics','CoreTelephony','Security','CoreLocation','JavaScriptCore'
+  s.libraries  = 'iconv','sqlite3','stdc++','z'
+
   # s.resource_bundles = {
   #   'FlutterBusiness' => ['FlutterBusiness/Assets/*.png']
   # }
@@ -39,4 +43,20 @@ TODO: Add long description of the pod here.
   # s.public_header_files = 'Pod/Classes/**/*.h'
   # s.frameworks = 'UIKit', 'MapKit'
   # s.dependency 'AFNetworking', '~> 2.3'
+  
+  s.subspec 'FlutterBusinessDebug' do |sp|
+    sp.vendored_frameworks = [
+        'FlutterBusiness/Classes/FlutterBusinessDebug/App.framework',
+        'FlutterBusiness/Classes/FlutterBusinessDebug/flutter_boost.framework',
+        'FlutterBusiness/Classes/FlutterBusinessDebug/FlutterPluginRegistrant.framework',
+        'FlutterBusiness/Classes/FlutterBusinessDebug/FMDB.framework',
+        'FlutterBusiness/Classes/FlutterBusinessDebug/path_provider.framework',
+        'FlutterBusiness/Classes/FlutterBusinessDebug/shared_preferences.framework',
+        'FlutterBusiness/Classes/FlutterBusinessDebug/sqflite.framework',
+    ]
+  end
+
+  s.subspec 'PXQSub' do |cs|
+    cs.source_files = 'FlutterBusiness/Classes/PXQSub/*.{h,m}'
+  end
 end
