@@ -1,0 +1,22 @@
+{
+  "name": "PXQWebImage",
+  "version": "0.0.1",
+  "summary": "A short description of PXQWebImage.",
+  "description": "TODO: Add long description of the pod here.",
+  "homepage": "https://github.com/MaybeLove00/PXQWebImage",
+  "license": {
+    "type": "MIT",
+    "file": "LICENSE"
+  },
+  "authors": {
+    "1551889052@qq.com": "xq.pan@ctrip.com"
+  },
+  "source": {
+    "git": "https://github.com/MaybeLove00/PXQWebImage.git",
+    "tag": "0.0.1"
+  },
+  "platforms": {
+    "ios": "9.0"
+  },
+  "source_files": "PXQWebImage/Classes/**/*"
+}
